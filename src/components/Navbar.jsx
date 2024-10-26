@@ -63,6 +63,7 @@ const NavbarLink = styled(Typography)(({ theme }) => ({
   color: "#4F5361",
   fontWeight: "bold",
   cursor: "pointer",
+  transition: "transform 0.08s ease",
   "&:hover": {
     transform: "scale(1.08)",
   },

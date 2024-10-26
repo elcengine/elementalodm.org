@@ -15,17 +15,6 @@ const CustomBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const CustomTextBox = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(7),
-  display: "flex",
-  justifyContent: "space-between",
-  padding: theme.spacing(0, 5, 0, 5),
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    gap: theme.spacing(5),
-  },
-}));
-
 const Divider = styled("div")(({ theme }) => ({
   width: "13%",
   height: "5px",
@@ -33,24 +22,6 @@ const Divider = styled("div")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     marginLeft: "auto",
     marginRight: "auto",
-  },
-}));
-
-const LargeText = styled(Typography)(({ theme }) => ({
-  fontSize: "64px",
-  color: "#000",
-  fontWeight: "700",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "32px",
-  },
-}));
-
-const SmallText = styled(Typography)(({ theme }) => ({
-  fontSize: "18px",
-  color: "#7B8087",
-  fontWeight: "500",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "14px",
   },
 }));
 

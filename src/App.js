@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Literature from "./components/Literature";
 import ResearchGap from "./components/ResearchGap";
 import ResearchProblem from "./components/ResearchProblem";
+import ResearchObjectives from "./components/ResearchObjectives";
 
 // import Reviews from "./components/Reviews";
 // import Properties from "./components/Properties";
@@ -23,10 +24,11 @@ function App() {
 
   return (
     <div className="App">
-      <Home homeRef={homeRef} allRefs={allRefs}/>
-      <Literature  domainRef={domainRef}/>
+      <Home homeRef={homeRef} allRefs={allRefs} />
+      <Literature domainRef={domainRef} />
       <ResearchGap />
       <ResearchProblem />
+      <ResearchObjectives />
 
       {/* <Reviews />
       <Properties />

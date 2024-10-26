@@ -10,6 +10,7 @@ const CustomButton = ({
   heroBtn,
   guideBtn,
   getStartedBtn,
+  onClick,
 }) => {
   const CustomButton = styled(Button)(({ theme }) => ({
     backgroundColor: backgroundColor,
@@ -38,7 +39,7 @@ const CustomButton = ({
     },
   }));
 
-  return <CustomButton>{buttonText}</CustomButton>;
+  return <CustomButton onClick={onClick}>{buttonText}</CustomButton>;
 };
 
 export default CustomButton;

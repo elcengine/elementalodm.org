@@ -53,12 +53,17 @@ const SmallText = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export default function Domain() {
+export default function Literature({ domainRef }) {
   return (
-    <Container sx={{ marginTop: 8, marginBottom: 16 }}>
-      <CustomBox>
+    <Container sx={{ marginTop: 8, marginBottom: 16 }} ref={domainRef}>
+      <Typography
+        sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}
+      >
+        Domain
+      </Typography>
+      <Divider />
+      <CustomBox marginTop={4}>
         <Box>
-          <Divider />
           <Typography
             sx={{
               fontSize: "35px",
@@ -67,7 +72,7 @@ export default function Domain() {
               my: 3,
             }}
           >
-            Domain
+            Literature Review
           </Typography>
 
           <Typography

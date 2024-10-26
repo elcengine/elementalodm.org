@@ -1,24 +1,38 @@
+import { useRef } from "react";
+
 // * Components
-import Hero from "./components/Hero";
-import Reviews from "./components/Reviews";
-import Properties from "./components/Properties";
-import MoreDetail from "./components/MoreDetail";
-import Featured from "./components/Featured";
-import Footer from "./components/Footer";
-import Domain from "./components/Domain";
+import Home from "./components/Home";
+import Literature from "./components/Literature";
 import ResearchGap from "./components/ResearchGap";
+import ResearchProblem from "./components/ResearchProblem";
+
+// import Reviews from "./components/Reviews";
+// import Properties from "./components/Properties";
+// import MoreDetail from "./components/MoreDetail";
+// import Featured from "./components/Featured";
+// import Footer from "./components/Footer";
 
 function App() {
+  const homeRef = useRef(null);
+  const domainRef = useRef(null);
+
+  const allRefs = {
+    homeRef,
+    domainRef,
+  };
+
   return (
     <div className="App">
-      <Hero />
-      <Domain />
+      <Home homeRef={homeRef} allRefs={allRefs}/>
+      <Literature  domainRef={domainRef}/>
       <ResearchGap />
-      <Reviews />
+      <ResearchProblem />
+
+      {/* <Reviews />
       <Properties />
       <MoreDetail />
       <Featured />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

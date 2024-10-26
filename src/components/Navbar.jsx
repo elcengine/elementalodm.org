@@ -105,8 +105,15 @@ const ListComponent = () => (
   </List>
 );
 
-export default function Navbar() {
+export default function Navbar({ allRefs }) {
   const [showMenu, setShowMenu] = useState(false);
+
+  const scroll = (name) => {
+    if (!allRefs) return;
+    const ref = allRefs[name];
+    if (!ref) return;
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <NavbarContainer>
@@ -125,9 +132,8 @@ export default function Navbar() {
       </Box>
 
       <NavbarLinkBox>
-        <NavbarLink>Home</NavbarLink>
-        <NavbarLink>Domain</NavbarLink>
-        <NavbarLink>Research Gap</NavbarLink>
+        <NavbarLink onClick={() => scroll("homeRef")}>Home</NavbarLink>
+        <NavbarLink onClick={() => scroll("domainRef")}>Domain</NavbarLink>
         <NavbarLink>Milestones</NavbarLink>
         <NavbarLink>Documents</NavbarLink>
         <NavbarLink>Slides</NavbarLink>

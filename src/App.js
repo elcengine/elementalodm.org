@@ -1,5 +1,7 @@
+import { useRef } from "react";
+
 // * Components
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Literature from "./components/Literature";
 import ResearchGap from "./components/ResearchGap";
 import ResearchProblem from "./components/ResearchProblem";
@@ -11,10 +13,18 @@ import ResearchProblem from "./components/ResearchProblem";
 // import Footer from "./components/Footer";
 
 function App() {
+  const homeRef = useRef(null);
+  const domainRef = useRef(null);
+
+  const allRefs = {
+    homeRef,
+    domainRef,
+  };
+
   return (
     <div className="App">
-      <Hero />
-      <Literature />
+      <Home homeRef={homeRef} allRefs={allRefs}/>
+      <Literature  domainRef={domainRef}/>
       <ResearchGap />
       <ResearchProblem />
 

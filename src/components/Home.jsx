@@ -6,12 +6,12 @@ import CustomButton from "./CustomButton";
 import HeroImg from "./../media/svg/server.svg";
 
 // * MUI Components
-import { Box, Container, Link, Typography, styled } from "@mui/material";
+import { Box, Container, Typography, styled } from "@mui/material";
 
 // * MUI Icons
 
 // * Styled Components
-const CustomHeroBox = styled(Box)(({ theme }) => ({
+const CustomHomeBox = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   gap: theme.spacing(5),
@@ -33,7 +33,7 @@ const Title = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export default function Hero() {
+export default function Home({ homeRef, allRefs }) {
   const toGithub = () => {
     window.location.href = "https://github.com/elcengine/elemental"; // Replace with your desired URL
   };
@@ -46,11 +46,12 @@ export default function Hero() {
         paddingBottom: 2,
         marginBottom: 6,
       }}
+      ref={homeRef}
     >
       <Container>
-        <Navbar />
+        <Navbar allRefs={allRefs} />
 
-        <CustomHeroBox>
+        <CustomHomeBox>
           <Box sx={{ flex: 1 }}>
             <Typography
               variant="body2"
@@ -86,7 +87,7 @@ export default function Hero() {
               style={{ maxWidth: "100%" }}
             />
           </Box>
-        </CustomHeroBox>
+        </CustomHomeBox>
       </Container>
     </Box>
   );

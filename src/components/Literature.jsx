@@ -53,9 +53,9 @@ const SmallText = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export default function Literature() {
+export default function Literature({ domainRef }) {
   return (
-    <Container sx={{ marginTop: 8, marginBottom: 16 }}>
+    <Container sx={{ marginTop: 8, marginBottom: 16 }} ref={domainRef}>
       <Typography
         sx={{ color: "#000339", fontSize: "35px", fontWeight: "bold" }}
       >

@@ -127,6 +127,7 @@ export default function Navbar() {
       <NavbarLinkBox>
         <NavbarLink>Home</NavbarLink>
         <NavbarLink>Domain</NavbarLink>
+        <NavbarLink>Research Gap</NavbarLink>
         <NavbarLink>Milestones</NavbarLink>
         <NavbarLink>Documents</NavbarLink>
         <NavbarLink>Slides</NavbarLink>

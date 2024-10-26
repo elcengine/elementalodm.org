@@ -6,7 +6,7 @@ import CustomButton from "./CustomButton";
 import HeroImg from "./../media/svg/server.svg";
 
 // * MUI Components
-import { Box, Container, Typography, styled } from "@mui/material";
+import { Box, Container, Link, Typography, styled } from "@mui/material";
 
 // * MUI Icons
 
@@ -34,6 +34,10 @@ const Title = styled(Typography)(({ theme }) => ({
 }));
 
 export default function Hero() {
+  const toGithub = () => {
+    window.location.href = "https://github.com/elcengine/elemental"; // Replace with your desired URL
+  };
+
   return (
     <Box
       sx={{
@@ -60,20 +64,18 @@ export default function Hero() {
             >
               Welcome to Elemental
             </Typography>
-            <Title variant="h2">
-              A modern MongoDB ODM for Golang.
-            </Title>
+            <Title variant="h2">A modern MongoDB ODM for Golang.</Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
             >
-              A whole bunch of lorem ipsum!
+              Try now!
             </Typography>
             <CustomButton
               backgroundColor="#0F1B4C"
               color="#fff"
-              buttonText="More About Us"
-              heroBtn={true}
+              buttonText="Github"
+              onClick={toGithub}
             />
           </Box>
 

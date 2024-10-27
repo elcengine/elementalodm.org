@@ -119,7 +119,8 @@ export default function ResearchObjectives() {
           <Looks3Icon sx={{ fontSize: 80, color: "#000339" }} />
           <Card>
             <LargeText>
-              Mongo Driver Encapsulation and Pattern Implementation
+              Identify and build a mechanism for Request validation directly
+              against a database
             </LargeText>
             <SmallText>
               Encapsulating the MongoDB driver within a robust, extensible

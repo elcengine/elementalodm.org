@@ -33,7 +33,11 @@ const Title = styled(Typography)(({ theme }) => ({
 
 export default function Home({ homeRef, allRefs }) {
   const toGithub = () => {
-    window.location.href = "https://github.com/elcengine/elemental"; // Replace with your desired URL
+    window.location.href = "https://github.com/elcengine/elemental";
+  };
+
+  const toDocs = () => {
+    window.location.href = "http://docs.elementalodm.org/";
   };
 
   return (
@@ -70,12 +74,20 @@ export default function Home({ homeRef, allRefs }) {
             >
               Try now!
             </Typography>
-            <CustomButton
-              backgroundColor="#0F1B4C"
-              color="#fff"
-              buttonText="Github"
-              onClick={toGithub}
-            />
+            <Box display="flex" flexDirection="row" gap={4}>
+              <CustomButton
+                backgroundColor="#0F1B4C"
+                color="#fff"
+                buttonText="Github"
+                onClick={toGithub}
+              />
+              <CustomButton
+                backgroundColor="#0F1B4C"
+                color="#fff"
+                buttonText="Documentation"
+                onClick={toDocs}
+              />
+            </Box>
           </Box>
 
           <Box sx={{ flex: 1.25 }}>

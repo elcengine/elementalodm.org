@@ -71,7 +71,7 @@ const Item = ({ date, title, description }) => (
   </TimelineItem>
 );
 
-export default function Milestones() {
+export default function Milestones({ milestonesRef }) {
   return (
     <Box
       sx={{
@@ -79,6 +79,7 @@ export default function Milestones() {
         minHeight: "80vh",
         paddingY: 2,
       }}
+      ref={milestonesRef}
     >
       <Typography
         variant="h3"

@@ -1,7 +1,7 @@
 // * MUI Components
 import { Box, Typography, styled } from "@mui/material";
 
-export default function Presentations() {
+export default function Presentations({ presentationsRef }) {
   return (
     <Box
       sx={{
@@ -12,6 +12,7 @@ export default function Presentations() {
         justifyContent: "center",
         paddingBottom: 16,
       }}
+      ref={presentationsRef}
     >
       <Typography
         variant="h3"

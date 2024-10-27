@@ -15,7 +15,6 @@ import sheronie from "../media/people/sheronie.jpeg";
 import drAnuradha from "../media/people/Dr_Anuradha.jpg";
 import msSamanthi from "../media/people/Ms_Samanthi.jpg";
 
-
 function PersonCardd({ imageSrc, name, email }) {
   return (
     <Card sx={{ width: 300, boxShadow: 3, borderRadius: 2 }}>
@@ -48,7 +47,7 @@ function PersonCardd({ imageSrc, name, email }) {
   );
 }
 
-export default function AboutUs() {
+export default function AboutUs({ aboutUsRef }) {
   return (
     <Box
       sx={{
@@ -58,6 +57,7 @@ export default function AboutUs() {
         justifyContent: "center",
         marginBottom: 16,
       }}
+      ref={aboutUsRef}
     >
       <Typography
         variant="h3"
@@ -87,7 +87,13 @@ export default function AboutUs() {
 
       <Typography
         variant="h3"
-        sx={{ fontSize: "28px", fontWeight: "bold", color: "#000339", mb: 3, mt: 8 }}
+        sx={{
+          fontSize: "28px",
+          fontWeight: "bold",
+          color: "#000339",
+          mb: 3,
+          mt: 8,
+        }}
       >
         Our Team
       </Typography>

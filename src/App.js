@@ -22,10 +22,18 @@ import Footer from "./components/Footer";
 function App() {
   const homeRef = useRef(null);
   const domainRef = useRef(null);
+  const milestonesRef = useRef(null);
+  const documentsRef = useRef(null);
+  const presentationsRef = useRef(null);
+  const aboutUsRef = useRef(null);
 
   const allRefs = {
     homeRef,
     domainRef,
+    milestonesRef,
+    documentsRef,
+    presentationsRef,
+    aboutUsRef,
   };
 
   return (
@@ -39,10 +47,10 @@ function App() {
       <Methodology />
       <Technologies />
 
-      <Milestones />
-      <Documents />
-      <Presentations />
-      <AboutUs />
+      <Milestones milestonesRef={milestonesRef} />
+      <Documents documentsRef={documentsRef} />
+      <Presentations presentationsRef={presentationsRef} />
+      <AboutUs aboutUsRef={aboutUsRef} />
       <Footer />
     </div>
   );

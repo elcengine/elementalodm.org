@@ -1,8 +1,3 @@
-import { useState } from "react";
-
-// * Components
-import CustomButton from "./CustomButton";
-
 // * Images
 import logoImg from "../media/logo.png";
 
@@ -10,26 +5,10 @@ import logoImg from "../media/logo.png";
 import {
   Box,
   Container,
-  Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   Typography,
   styled,
 } from "@mui/material";
 
-// * MUI Icons
-import MenuIcon from "@mui/icons-material/Menu";
-import {
-  Contacts,
-  FeaturedPlayList,
-  Home,
-  ListAlt,
-  MiscellaneousServices,
-  Transform,
-} from "@mui/icons-material";
 
 // * Styled Components
 const NavbarContainer = styled(Container)(({ theme }) => ({
@@ -69,45 +48,7 @@ const NavbarLink = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const MenuBox = styled(Box)(({ theme }) => ({
-  cursor: "pointer",
-  [theme.breakpoints.up("md")]: {
-    display: "none",
-  },
-}));
-
-// * Functions
-const ListComponent = () => (
-  <List
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "space-between",
-      justifyContent: "center",
-      width: 200,
-    }}
-  >
-    {["Home", "Features", "Services", "Products", "About"].map(
-      (text, index) => (
-        <ListItem key={text} disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              {index === 0 && <Home />}
-              {index === 1 && <FeaturedPlayList />}
-              {index === 2 && <MiscellaneousServices />}
-              {index === 3 && <ListAlt />}
-              {index === 4 && <Contacts />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItemButton>
-        </ListItem>
-      )
-    )}
-  </List>
-);
-
 export default function Navbar({ allRefs }) {
-  const [showMenu, setShowMenu] = useState(false);
 
   const scroll = (name) => {
     if (!allRefs) return;
@@ -119,27 +60,16 @@ export default function Navbar({ allRefs }) {
   return (
     <NavbarContainer>
       <Box>
-        <MenuBox onClick={(e) => setShowMenu(true)}>
-          <MenuIcon />
-        </MenuBox>
-        <Drawer
-          anchor="left"
-          open={showMenu}
-          onClose={(e) => setShowMenu(false)}
-        >
-          <ListComponent />
-        </Drawer>
         <NavbarLogo src={logoImg} alt="logo" />
       </Box>
 
       <NavbarLinkBox>
         <NavbarLink onClick={() => scroll("homeRef")}>Home</NavbarLink>
         <NavbarLink onClick={() => scroll("domainRef")}>Domain</NavbarLink>
-        <NavbarLink>Milestones</NavbarLink>
-        <NavbarLink>Documents</NavbarLink>
-        <NavbarLink>Slides</NavbarLink>
-        <NavbarLink>About Us</NavbarLink>
-        <NavbarLink>Contact Us</NavbarLink>
+        <NavbarLink onClick={() => scroll("milestonesRef")}>Milestones</NavbarLink>
+        <NavbarLink onClick={() => scroll("documentsRef")}>Documents</NavbarLink>
+        <NavbarLink onClick={() => scroll("presentationsRef")}>Presentations</NavbarLink>
+        <NavbarLink onClick={() => scroll("aboutUsRef")}>About Us</NavbarLink>
       </NavbarLinkBox>
     </NavbarContainer>
   );

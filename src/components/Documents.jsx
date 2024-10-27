@@ -1,7 +1,7 @@
 // * MUI Components
 import { Box, Typography, styled } from "@mui/material";
 
-export default function Documents() {
+export default function Documents({ documentsRef }) {
   return (
     <Box
       sx={{
@@ -11,6 +11,7 @@ export default function Documents() {
         justifyContent: "center",
         marginBottom: 16,
       }}
+      ref={documentsRef}
     >
       <Typography
         variant="h3"

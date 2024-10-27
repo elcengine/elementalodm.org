@@ -39,22 +39,24 @@ export default function Presentations({ presentationsRef }) {
       >
         Presentations
       </Typography>
-      <DownloadCard
-        label="Proposal Presentation"
-        link="https://drive.google.com/drive/folders/1ivN9x1pTxws_cQXs0c4gWAfJgCvfRhFE?usp=sharing"
-      />
-      <DownloadCard
-        label="Progress Presentation 1"
-        link="https://drive.google.com/drive/folders/1qL7EkZqHFazE6KrvnQp683tQW0uNsIuV?usp=sharing"
-      />
-      <DownloadCard
-        label="Progress Presentation 2"
-        link="https://drive.google.com/drive/folders/18Q8b9qiNfFhGpKbycWk-9kHCDoLLM7IR?usp=sharing"
-      />
-      <DownloadCard
-        label="Final Presentation"
-        link="https://drive.google.com/drive/folders/1HEH-equz7AnB7DjVolTZ_wgEcnlrENM3?usp=sharing"
-      />
+      <Box display="flex" flexDirection="row" gap={8}>
+        <DownloadCard
+          label="Proposal Presentation"
+          link="https://drive.google.com/drive/folders/1ivN9x1pTxws_cQXs0c4gWAfJgCvfRhFE?usp=sharing"
+        />
+        <DownloadCard
+          label="Progress Presentation 1"
+          link="https://drive.google.com/drive/folders/1qL7EkZqHFazE6KrvnQp683tQW0uNsIuV?usp=sharing"
+        />
+        <DownloadCard
+          label="Progress Presentation 2"
+          link="https://drive.google.com/drive/folders/18Q8b9qiNfFhGpKbycWk-9kHCDoLLM7IR?usp=sharing"
+        />
+        <DownloadCard
+          label="Final Presentation"
+          link="https://drive.google.com/drive/folders/1HEH-equz7AnB7DjVolTZ_wgEcnlrENM3?usp=sharing"
+        />
+      </Box>
     </Box>
   );
 }

@@ -1,5 +1,5 @@
 // * Images
-import houseCardImg from "../media/research-problem.png";
+import researchProblemImg from "../media/research-problem.png";
 
 // * MUI Components
 import { Box, Container, Typography, styled } from "@mui/material";
@@ -30,7 +30,7 @@ export default function ResearchProblem() {
     <Container sx={{ marginBottom: 16 }}>
       <CustomBox>
         <img
-          src={houseCardImg}
+          src={researchProblemImg}
           alt="House Card Images"
           style={{ maxWidth: "30vw" }}
         />

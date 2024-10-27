@@ -6,6 +6,8 @@ import Literature from "./components/Literature";
 import ResearchGap from "./components/ResearchGap";
 import ResearchProblem from "./components/ResearchProblem";
 import ResearchObjectives from "./components/ResearchObjectives";
+import Methodology from "./components/Methodology";
+import Technologies from "./components/Technologies";
 
 // import Reviews from "./components/Reviews";
 // import Properties from "./components/Properties";
@@ -29,6 +31,8 @@ function App() {
       <ResearchGap />
       <ResearchProblem />
       <ResearchObjectives />
+      <Methodology />
+      <Technologies />
 
       {/* <Reviews />
       <Properties />
@@ -38,7 +42,5 @@ function App() {
     </div>
   );
 }
-
-// Git debug comment
 
 export default App;

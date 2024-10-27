@@ -1,6 +1,3 @@
-// * Images
-import houseCardImg from "../media/houseCard.png";
-
 // * MUI Components
 import { Box, Container, Typography, styled } from "@mui/material";
 

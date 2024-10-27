@@ -9,12 +9,15 @@ import ResearchObjectives from "./components/ResearchObjectives";
 import Methodology from "./components/Methodology";
 import Technologies from "./components/Technologies";
 import Milestones from "./components/Milestones";
+import Documents from "./components/Documents";
+import Presentations from "./components/Presentations";
+import AboutUs from "./components/AboutUs";
 
 // import Reviews from "./components/Reviews";
 // import Properties from "./components/Properties";
 // import MoreDetail from "./components/MoreDetail";
 // import Featured from "./components/Featured";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   const homeRef = useRef(null);
@@ -35,14 +38,12 @@ function App() {
       <ResearchObjectives />
       <Methodology />
       <Technologies />
-      
-      <Milestones />
 
-      {/* <Reviews />
-      <Properties />
-      <MoreDetail />
-      <Featured />
-      <Footer /> */}
+      <Milestones />
+      <Documents />
+      <Presentations />
+      <AboutUs />
+      <Footer />
     </div>
   );
 }

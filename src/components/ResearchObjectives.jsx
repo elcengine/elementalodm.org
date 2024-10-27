@@ -1,6 +1,3 @@
-// * Images
-import houseCardImg from "../media/research-problem.png";
-
 // * MUI Components
 import { Box, Container, Typography, styled } from "@mui/material";
 import LooksOneIcon from "@mui/icons-material/LooksOne";

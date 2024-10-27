@@ -8,6 +8,7 @@ import ResearchProblem from "./components/ResearchProblem";
 import ResearchObjectives from "./components/ResearchObjectives";
 import Methodology from "./components/Methodology";
 import Technologies from "./components/Technologies";
+import Milestones from "./components/Milestones";
 
 // import Reviews from "./components/Reviews";
 // import Properties from "./components/Properties";
@@ -27,12 +28,15 @@ function App() {
   return (
     <div className="App">
       <Home homeRef={homeRef} allRefs={allRefs} />
+
       <Literature domainRef={domainRef} />
       <ResearchGap />
       <ResearchProblem />
       <ResearchObjectives />
       <Methodology />
       <Technologies />
+      
+      <Milestones />
 
       {/* <Reviews />
       <Properties />

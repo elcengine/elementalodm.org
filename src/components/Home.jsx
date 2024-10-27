@@ -8,8 +8,6 @@ import HeroImg from "./../media/svg/server.svg";
 // * MUI Components
 import { Box, Container, Typography, styled } from "@mui/material";
 
-// * MUI Icons
-
 // * Styled Components
 const CustomHomeBox = styled(Box)(({ theme }) => ({
   display: "flex",

@@ -1,5 +1,5 @@
 // * Images
-import houseCardImg from "../media/research-problem.png";
+import researchProblemImg from "../media/research-problem.png";
 
 // * MUI Components
 import { Box, Container, Typography, styled } from "@mui/material";
@@ -15,17 +15,6 @@ const CustomBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const CustomTextBox = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(7),
-  display: "flex",
-  justifyContent: "space-between",
-  padding: theme.spacing(0, 5, 0, 5),
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    gap: theme.spacing(5),
-  },
-}));
-
 const Divider = styled("div")(({ theme }) => ({
   width: "13%",
   height: "5px",
@@ -36,30 +25,12 @@ const Divider = styled("div")(({ theme }) => ({
   },
 }));
 
-const LargeText = styled(Typography)(({ theme }) => ({
-  fontSize: "64px",
-  color: "#000",
-  fontWeight: "700",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "32px",
-  },
-}));
-
-const SmallText = styled(Typography)(({ theme }) => ({
-  fontSize: "18px",
-  color: "#7B8087",
-  fontWeight: "500",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "14px",
-  },
-}));
-
 export default function ResearchProblem() {
   return (
     <Container sx={{ marginBottom: 16 }}>
       <CustomBox>
         <img
-          src={houseCardImg}
+          src={researchProblemImg}
           alt="House Card Images"
           style={{ maxWidth: "30vw" }}
         />

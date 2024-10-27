@@ -115,7 +115,7 @@ export default function AboutUs({ aboutUsRef }) {
           email={"sheroniperera20@gmail.com"}
         />
         <PersonCardd
-          imageSrc={shifan}
+          imageSrc={laksara}
           name={"Yasindu Laksara"}
           email={"amylaksara@gmail.com"}
         />

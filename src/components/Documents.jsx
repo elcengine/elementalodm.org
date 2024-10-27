@@ -24,14 +24,12 @@ const DownloadCard = ({ label, link }) => {
 export default function Documents({ documentsRef }) {
   return (
     <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: 16,
-        gap: 8,
-      }}
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      marginBottom={16}
+      gap={8}
       ref={documentsRef}
     >
       <Typography
@@ -40,26 +38,30 @@ export default function Documents({ documentsRef }) {
       >
         Documents
       </Typography>
-      <DownloadCard
-        label="Project Charter"
-        link="https://drive.google.com/drive/folders/11H1GxguhEeDpixDWhWNfREbBBj0W6NsX?usp=sharing"
-      />
-      <DownloadCard
-        label="Proposal Report"
-        link="https://drive.google.com/drive/folders/1HPgjcvGb1hy9WsXyghfdNsyU6cSgwNIX?usp=sharing"
-      />
-      <DownloadCard
-        label="Status Document 1"
-        link="https://drive.google.com/drive/folders/1sWYJRKKnMdJmZB1uGjlyDmSHmI7JqP_Q?usp=sharing"
-      />
-      <DownloadCard
-        label="Status Document 2"
-        link="https://drive.google.com/drive/folders/1axBAuY5JZhCpMITJ7SX_yQye7IwiX9oC?usp=sharing"
-      />
-      <DownloadCard
-        label="Final Report"
-        link="https://drive.google.com/drive/folders/1ig87_gy4jKNlQItAJtwuy6jm39L7m9ik?usp=sharing"
-      />
+      <Box display="flex" flexDirection="row" gap={8}>
+        <DownloadCard
+          label="Project Charter"
+          link="https://drive.google.com/drive/folders/11H1GxguhEeDpixDWhWNfREbBBj0W6NsX?usp=sharing"
+        />
+        <DownloadCard
+          label="Proposal Report"
+          link="https://drive.google.com/drive/folders/1HPgjcvGb1hy9WsXyghfdNsyU6cSgwNIX?usp=sharing"
+        />
+      </Box>
+      <Box display="flex" flexDirection="row" gap={8}>
+        <DownloadCard
+          label="Status Document 1"
+          link="https://drive.google.com/drive/folders/1sWYJRKKnMdJmZB1uGjlyDmSHmI7JqP_Q?usp=sharing"
+        />
+        <DownloadCard
+          label="Status Document 2"
+          link="https://drive.google.com/drive/folders/1axBAuY5JZhCpMITJ7SX_yQye7IwiX9oC?usp=sharing"
+        />
+        <DownloadCard
+          label="Final Report"
+          link="https://drive.google.com/drive/folders/1ig87_gy4jKNlQItAJtwuy6jm39L7m9ik?usp=sharing"
+        />
+      </Box>
     </Box>
   );
 }

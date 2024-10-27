@@ -137,12 +137,6 @@ export default function Literature({ domainRef }) {
             Programming Language. 2012. [Online]. Available:
             https://openlibrary.org/books/OL25538095M/The_way_to_go
             <br />
-            [4] GeeksforGeeks, “Interesting facts about Golang,” GeeksforGeeks,
-            Sep. 08, 2020.
-            https://www.geeksforgeeks.org/interesting-facts-about-golang/
-            <br />
-            [5] “Stack Overflow Developer Survey 2017,” Stack Overflow.
-            https://survey.stackoverflow.co/2017#most-loved-dreaded-and-wanted
           </Typography>
         </Box>
       </CustomBox>

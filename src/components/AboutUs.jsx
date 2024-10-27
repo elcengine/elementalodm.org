@@ -12,6 +12,7 @@ import {
 import shifan from "../media/people/shifan.jpg";
 import akalanka from "../media/people/akalanka.jpeg";
 import sheronie from "../media/people/sheronie.jpeg";
+import laksara from "../media/people/laksara.jpg";
 import drAnuradha from "../media/people/Dr_Anuradha.jpg";
 import msSamanthi from "../media/people/Ms_Samanthi.jpg";
 
@@ -106,12 +107,17 @@ export default function AboutUs({ aboutUsRef }) {
         <PersonCardd
           imageSrc={akalanka}
           name={"Akalanka Perera"}
-          email={"akalanka47000@gmail.com"}
+          email={"akalanka128@gmail.com"}
         />
         <PersonCardd
           imageSrc={sheronie}
           name={"Sheronie Perera"}
-          email={"devshe20@gmail.com"}
+          email={"sheroniperera20@gmail.com"}
+        />
+        <PersonCardd
+          imageSrc={shifan}
+          name={"Yasindu Laksara"}
+          email={"amylaksara@gmail.com"}
         />
       </Box>
     </Box>

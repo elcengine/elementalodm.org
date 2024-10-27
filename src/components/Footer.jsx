@@ -10,7 +10,7 @@ export default function Footer() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        paddingBottom: 16,
+        paddingTop: 8,
       }}
     >
       <Box
@@ -32,7 +32,7 @@ export default function Footer() {
         <Typography variant="body2" color="textSecondary">
           Emails:{" "}
           <Link href="mailto:info@company.com" color="inherit">
-            shifan611@gmail.com, akalanka47000@gmail.com, devshe20@gmail.com
+            shifan611@gmail.com, akalanka47000@gmail.com, devshe20@gmail.com, amylaksara@gmail.com
           </Link>
         </Typography>
         <Typography
